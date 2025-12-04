@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "generate-pdf": "node scripts/generate-pdf.js"
   },
   "dependencies": {
     "next": "14.0.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "puppeteer": "^23.11.1"
   }
 }
-

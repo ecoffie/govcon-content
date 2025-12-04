@@ -94,12 +94,12 @@ export default function CageCodeRequirementsPage() {
         </ul>
       </Section>
 
-      <div id="lead-magnet">
+      <div id="free-checklist">
         <LeadMagnet 
           title="Download: CAGE Code Requirements Checklist PDF"
           description="Print this checklist and check off each item as you gather your documents. Be fully prepared before starting your application."
           leadMagnetName="CAGE Code Requirements Checklist PDF"
-          downloadUrl="/downloads/cage-code-checklist.html"
+          downloadUrl="/downloads/cage-code-checklist.pdf"
         />
       </div>
 

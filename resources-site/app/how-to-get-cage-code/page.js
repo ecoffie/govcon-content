@@ -71,12 +71,12 @@ export default function HowToGetCageCodePage() {
         <p><strong>Time needed:</strong> 2-3 minutes</p>
       </Section>
 
-      <div id="lead-magnet">
+      <div id="free-checklist">
         <LeadMagnet 
           title="Download: Complete SAM.gov Registration Checklist"
           description="Never miss a step. Get our detailed checklist with every field and document you'll need to complete your registration correctly the first time."
           leadMagnetName="SAM.gov Registration Checklist"
-          downloadUrl="/downloads/cage-code-checklist.html"
+          downloadUrl="/downloads/cage-code-checklist.pdf"
         />
       </div>
 
