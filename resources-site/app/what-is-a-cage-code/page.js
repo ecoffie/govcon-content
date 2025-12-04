@@ -4,6 +4,16 @@ import Link from 'next/link'
 export const metadata = {
   title: 'What is a CAGE Code? Complete Guide for Beginners 2025',
   description: 'Learn what a CAGE Code is, why you need one for federal contracting, and how it differs from DUNS and UEI numbers. Simple explanation for beginners.',
+  keywords: ['what is a cage code', 'cage code definition', 'cage code meaning', 'cage code explained', 'federal contractor id'],
+  alternates: {
+    canonical: 'https://guides.govcongiants.org/what-is-a-cage-code',
+  },
+  openGraph: {
+    title: 'What is a CAGE Code? Complete Guide for Beginners',
+    description: 'Simple explanation of CAGE Codes for federal contracting beginners.',
+    url: 'https://guides.govcongiants.org/what-is-a-cage-code',
+    type: 'article',
+  },
 }
 
 export default function WhatIsCageCodePage() {

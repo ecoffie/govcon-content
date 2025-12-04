@@ -3,6 +3,16 @@ import { Nav, Hero, QuickAnswer, Section, LeadMagnet, OpnGovIQCallout, FHCCallou
 export const metadata = {
   title: 'CAGE Code Guide 2025: Complete Resource for Federal Contractors',
   description: 'Learn everything about CAGE Codes: what they are, how to get one, requirements, and how to use it for federal contracting. Free checklist included.',
+  keywords: ['CAGE code', 'what is a cage code', 'how to get cage code', 'cage code lookup', 'federal contracting', 'SAM.gov registration'],
+  alternates: {
+    canonical: 'https://guides.govcongiants.org/cage-code',
+  },
+  openGraph: {
+    title: 'CAGE Code Guide 2025: Complete Resource for Federal Contractors',
+    description: 'Learn everything about CAGE Codes: what they are, how to get one, requirements, and how to use it for federal contracting.',
+    url: 'https://guides.govcongiants.org/cage-code',
+    type: 'article',
+  },
 }
 
 export default function CageCodePage() {

@@ -4,6 +4,16 @@ import Link from 'next/link'
 export const metadata = {
   title: 'CAGE Code vs DUNS Number: What\'s the Difference?',
   description: 'Understand the key differences between CAGE Code and DUNS Number (now UEI). Learn which identifiers you need for federal contracting in 2025.',
+  keywords: ['cage code vs duns', 'duns number', 'UEI number', 'cage code duns difference', 'federal contractor identifiers'],
+  alternates: {
+    canonical: 'https://guides.govcongiants.org/cage-code-vs-duns-number',
+  },
+  openGraph: {
+    title: 'CAGE Code vs DUNS Number: Key Differences',
+    description: 'Understand the differences between CAGE Code and DUNS Number (now UEI).',
+    url: 'https://guides.govcongiants.org/cage-code-vs-duns-number',
+    type: 'article',
+  },
 }
 
 export default function CageCodeVsDunsPage() {

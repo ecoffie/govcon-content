@@ -4,6 +4,16 @@ import Link from 'next/link'
 export const metadata = {
   title: 'CAGE Code Requirements: What You Need to Apply (2025)',
   description: 'Complete checklist of CAGE Code requirements. Everything you need to apply: documents, eligibility, and step-by-step verification process.',
+  keywords: ['cage code requirements', 'cage code eligibility', 'cage code documents', 'cage code checklist', 'federal contractor requirements'],
+  alternates: {
+    canonical: 'https://guides.govcongiants.org/cage-code-requirements',
+  },
+  openGraph: {
+    title: 'CAGE Code Requirements: Complete Checklist',
+    description: 'Everything you need to apply for a CAGE Code. Complete requirements checklist.',
+    url: 'https://guides.govcongiants.org/cage-code-requirements',
+    type: 'article',
+  },
 }
 
 export default function CageCodeRequirementsPage() {

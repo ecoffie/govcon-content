@@ -3,6 +3,16 @@ import { Nav, Hero, QuickAnswer, Section, OpnGovIQCallout, FHCCallout, CTASectio
 export const metadata = {
   title: 'CAGE Code Lookup Tool - Free Search & Verification',
   description: 'Search for any company\'s CAGE Code. Free CAGE Code lookup and verification tool with detailed company information.',
+  keywords: ['cage code lookup', 'cage code search', 'verify cage code', 'find cage code', 'contractor verification'],
+  alternates: {
+    canonical: 'https://guides.govcongiants.org/cage-code-lookup',
+  },
+  openGraph: {
+    title: 'CAGE Code Lookup Tool - Free Search & Verification',
+    description: 'Search for any company\'s CAGE Code. Free lookup and verification tool.',
+    url: 'https://guides.govcongiants.org/cage-code-lookup',
+    type: 'article',
+  },
 }
 
 export default function CageCodeLookupPage() {

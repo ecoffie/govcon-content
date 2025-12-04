@@ -3,6 +3,16 @@ import { Nav, Hero, QuickAnswer, Section, LeadMagnet, OpnGovIQCallout, FHCCallou
 export const metadata = {
   title: 'How to Get a CAGE Code: 5 Easy Steps (2025 Guide)',
   description: 'Step-by-step guide to getting your CAGE Code for federal government contracting. Free process through SAM.gov - complete in 5 simple steps.',
+  keywords: ['how to get cage code', 'apply for cage code', 'cage code application', 'SAM.gov registration', 'cage code free'],
+  alternates: {
+    canonical: 'https://guides.govcongiants.org/how-to-get-cage-code',
+  },
+  openGraph: {
+    title: 'How to Get a CAGE Code: 5 Easy Steps',
+    description: 'Step-by-step guide to getting your CAGE Code for federal contracting.',
+    url: 'https://guides.govcongiants.org/how-to-get-cage-code',
+    type: 'article',
+  },
 }
 
 export default function HowToGetCageCodePage() {
