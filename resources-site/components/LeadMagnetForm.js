@@ -27,14 +27,24 @@ export function LeadMagnetForm({ formId, downloadUrl, leadMagnetName }) {
 
     // Trigger download immediately (before FormSpark submission)
     if (fullDownloadUrl) {
-      // Create a temporary anchor element and trigger download
-      const link = document.createElement('a')
-      link.href = fullDownloadUrl
-      link.download = fullDownloadUrl.split('/').pop() || 'download.pdf'
-      link.target = '_blank'
-      document.body.appendChild(link)
-      link.click()
-      document.body.removeChild(link)
+      // Open PDF in new tab - browsers handle PDFs well this way
+      // User can save from the browser's PDF viewer
+      window.open(fullDownloadUrl, '_blank')
+      
+      // Also try programmatic download for browsers that support it
+      // Some browsers will download, others will open in new tab (both work!)
+      try {
+        const link = document.createElement('a')
+        link.href = fullDownloadUrl
+        link.download = fullDownloadUrl.split('/').pop() || 'cage-code-checklist.pdf'
+        link.style.display = 'none'
+        document.body.appendChild(link)
+        link.click()
+        setTimeout(() => document.body.removeChild(link), 100)
+      } catch (err) {
+        // Fallback: just opening in new tab is fine
+        console.log('Direct download not supported, using new tab')
+      }
     }
 
     try {
