@@ -13,41 +13,51 @@ export function LeadMagnetForm({ formId, downloadUrl, leadMagnetName }) {
     setLoading(true)
     setError('')
 
-    try {
-      // Submit to FormSpark
-      const response = await fetch(`https://submit-form.com/${formId}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          leadMagnet: leadMagnetName || 'CAGE Code Resource',
-          source: 'GovCon Resources Site',
-          timestamp: new Date().toISOString(),
-        }),
-      })
+    // Check if FormSpark is configured
+    const isFormSparkConfigured = formId && 
+                                   formId !== 'YOUR_FORMSPARK_FORM_ID' && 
+                                   formId.trim().length > 0
 
-      if (response.ok) {
-        setSubmitted(true)
-        setEmail('')
-        
-        // If download URL provided, trigger download
-        if (downloadUrl) {
-          setTimeout(() => {
-            window.open(downloadUrl, '_blank')
-          }, 1000)
+    try {
+      // If FormSpark is configured, submit to FormSpark
+      if (isFormSparkConfigured) {
+        const response = await fetch(`https://submit-form.com/${formId}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+            leadMagnet: leadMagnetName || 'CAGE Code Resource',
+            source: 'GovCon Resources Site',
+            timestamp: new Date().toISOString(),
+          }),
+        })
+
+        if (!response.ok) {
+          throw new Error('Form submission failed')
         }
-      } else {
-        throw new Error('Form submission failed')
+      }
+
+      // Mark as submitted and trigger download
+      setSubmitted(true)
+      setEmail('')
+      
+      // If download URL provided, trigger download
+      if (downloadUrl) {
+        setTimeout(() => {
+          window.open(downloadUrl, '_blank')
+        }, 500)
       }
     } catch (err) {
       console.error('Form submission error:', err)
       setError('Something went wrong. Please try again.')
-    } finally {
       setLoading(false)
+      return
     }
+
+    setLoading(false)
   }
 
   if (submitted) {
@@ -60,11 +70,11 @@ export function LeadMagnetForm({ formId, downloadUrl, leadMagnetName }) {
         textAlign: 'center'
       }}>
         <div style={{ fontSize: '2rem', marginBottom: '8px' }}>✅</div>
-        <strong style={{ color: '#2E7D32' }}>Success! Check your email.</strong>
+        <strong style={{ color: '#2E7D32' }}>Success!</strong>
         <p style={{ marginTop: '8px', fontSize: '14px', color: '#666' }}>
           {downloadUrl 
-            ? 'Your download should start automatically. Check your email for the link.'
-            : 'We\'ve sent you the resource. Check your inbox (and spam folder).'}
+            ? 'Your download should start automatically.'
+            : 'Check your email for the resource.'}
         </p>
       </div>
     )

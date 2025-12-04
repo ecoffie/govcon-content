@@ -24,7 +24,7 @@ export default function CageCodePage() {
         title="CAGE Code Complete Guide: Everything Federal Contractors Need to Know"
         subtitle="Your complete resource for understanding, obtaining, and using your CAGE Code"
         ctaText="Download Free Guide"
-        ctaUrl="#lead-magnet"
+        ctaUrl="#free-checklist"
       />
 
       <QuickAnswer 

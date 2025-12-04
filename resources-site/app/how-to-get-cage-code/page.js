@@ -24,7 +24,7 @@ export default function HowToGetCageCodePage() {
         title="How to Get a CAGE Code in 5 Simple Steps"
         subtitle="Your step-by-step guide to obtaining your Commercial and Government Entity Code"
         ctaText="Download Checklist"
-        ctaUrl="#lead-magnet"
+        ctaUrl="#free-checklist"
       />
 
       <QuickAnswer 

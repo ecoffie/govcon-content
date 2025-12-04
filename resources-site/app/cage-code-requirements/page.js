@@ -25,7 +25,7 @@ export default function CageCodeRequirementsPage() {
         title="CAGE Code Requirements: Complete Checklist"
         subtitle="Everything you need to know and prepare before applying for your CAGE Code"
         ctaText="Download Checklist"
-        ctaUrl="#lead-magnet"
+        ctaUrl="#free-checklist"
       />
 
       <QuickAnswer 
