@@ -75,6 +75,8 @@ export default function HowToGetCageCodePage() {
         <LeadMagnet 
           title="Download: Complete SAM.gov Registration Checklist"
           description="Never miss a step. Get our detailed checklist with every field and document you'll need to complete your registration correctly the first time."
+          leadMagnetName="SAM.gov Registration Checklist"
+          downloadUrl="/downloads/cage-code-checklist.html"
         />
       </div>
 
