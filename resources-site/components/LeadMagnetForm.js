@@ -18,17 +18,30 @@ export function LeadMagnetForm({ formId, downloadUrl, leadMagnetName }) {
                                    formId !== 'YOUR_FORMSPARK_FORM_ID' && 
                                    formId.trim().length > 0
 
+    // Convert relative download URL to absolute URL
+    const fullDownloadUrl = downloadUrl 
+      ? downloadUrl.startsWith('http') 
+        ? downloadUrl 
+        : `${window.location.origin}${downloadUrl}`
+      : null
+
+    // Trigger download immediately (before FormSpark submission)
+    if (fullDownloadUrl) {
+      // Create a temporary anchor element and trigger download
+      const link = document.createElement('a')
+      link.href = fullDownloadUrl
+      link.download = fullDownloadUrl.split('/').pop() || 'download.pdf'
+      link.target = '_blank'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+
     try {
-      // If FormSpark is configured, submit to FormSpark
+      // Submit to FormSpark in the background (don't block download)
       if (isFormSparkConfigured) {
-        // Convert relative download URL to absolute URL
-        const fullDownloadUrl = downloadUrl 
-          ? downloadUrl.startsWith('http') 
-            ? downloadUrl 
-            : `${window.location.origin}${downloadUrl}`
-          : null
-        
-        const response = await fetch(`https://submit-form.com/${formId}`, {
+        // Fire and forget - don't wait for response
+        fetch(`https://submit-form.com/${formId}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -41,28 +54,26 @@ export function LeadMagnetForm({ formId, downloadUrl, leadMagnetName }) {
             source: 'GovCon Resources Site',
             timestamp: new Date().toISOString(),
           }),
+        }).catch(err => {
+          // Silently fail - user already got the download
+          console.error('FormSpark submission error:', err)
         })
-
-        if (!response.ok) {
-          throw new Error('Form submission failed')
-        }
       }
 
-      // Mark as submitted and trigger download
+      // Mark as submitted
       setSubmitted(true)
       setEmail('')
-      
-      // If download URL provided, trigger download
-      if (downloadUrl) {
-        setTimeout(() => {
-          window.open(downloadUrl, '_blank')
-        }, 500)
-      }
     } catch (err) {
-      console.error('Form submission error:', err)
-      setError('Something went wrong. Please try again.')
-      setLoading(false)
-      return
+      console.error('Form error:', err)
+      // Don't show error if download already happened
+      if (!fullDownloadUrl) {
+        setError('Something went wrong. Please try again.')
+        setLoading(false)
+        return
+      }
+      // If download happened, still show success
+      setSubmitted(true)
+      setEmail('')
     }
 
     setLoading(false)
@@ -81,9 +92,28 @@ export function LeadMagnetForm({ formId, downloadUrl, leadMagnetName }) {
         <strong style={{ color: '#2E7D32' }}>Success!</strong>
         <p style={{ marginTop: '8px', fontSize: '14px', color: '#666' }}>
           {downloadUrl 
-            ? 'Your download should start automatically.'
+            ? 'Your download has started! Check your downloads folder if it didn\'t appear.'
             : 'Check your email for the resource.'}
         </p>
+        {downloadUrl && (
+          <a 
+            href={downloadUrl} 
+            download
+            style={{
+              display: 'inline-block',
+              marginTop: '12px',
+              padding: '8px 16px',
+              background: 'white',
+              color: 'var(--primary)',
+              border: '2px solid var(--primary)',
+              borderRadius: '4px',
+              textDecoration: 'none',
+              fontWeight: '600',
+            }}
+          >
+            Click here if download didn't start →
+          </a>
+        )}
       </div>
     )
   }
