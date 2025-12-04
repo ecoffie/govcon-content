@@ -1,0 +1,34 @@
+{
+  "id": "cage-code-lookup",
+  "slug": "cage-code-lookup",
+  "pageType": "lookup",
+  "status": "published",
+  "title": "CAGE Code Lookup & Verification Tool - Free Search",
+  "subtitle": "Search and verify CAGE Codes for any federal contractor",
+  "metaTitle": "CAGE Code Lookup Tool - Free Search & Verification",
+  "metaDescription": "Search for any company's CAGE Code. Free CAGE Code lookup and verification tool with detailed company information.",
+  "focusKeyword": "cage code lookup",
+  "primaryCtaText": "Search CAGE Codes",
+  "primaryCtaUrl": "#lookup-tool",
+  "quickDefinition": "Use our free CAGE Code lookup tool to search and verify any company's Commercial and Government Entity Code. Find contractor details, registration status, and verification information instantly.",
+  "keyPoints": [
+    "Search by company name or CAGE Code",
+    "Verify contractor registration status",
+    "Free to use - no account required",
+    "Updated with latest SAM.gov data"
+  ],
+  "sections": [
+    {
+      "heading": "How to Use the CAGE Code Lookup Tool",
+      "content": "Our CAGE Code lookup tool makes it easy to find and verify contractor information.\n\n**To search by CAGE Code:**\n1. Enter the 5-character CAGE Code in the search box\n2. Click \"Search\"\n3. View detailed company information\n\n**To search by company name:**\n1. Enter the company name (partial names work)\n2. Click \"Search\"\n3. Browse matching results\n\nThe lookup tool pulls data from official government sources to ensure accuracy."
+    },
+    {
+      "heading": "What Information Does a CAGE Code Lookup Show?",
+      "content": "A CAGE Code lookup reveals important contractor information:\n\n- **Company Name** - Legal business name\n- **Physical Address** - Business location\n- **CAGE Code Status** - Active or inactive\n- **Registration Date** - When the CAGE was assigned\n- **Business Type** - Size and ownership classifications\n\nThis information helps you verify contractors before doing business with them."
+    }
+  ],
+  "showOpnGovIQCallout": true,
+  "showFHCCallout": true,
+  "createdAt": "2025-12-04T09:50:41.145Z",
+  "updatedAt": "2025-12-04T09:50:41.145Z"
+}

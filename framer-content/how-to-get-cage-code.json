@@ -1,0 +1,46 @@
+{
+  "id": "how-to-get-cage-code",
+  "slug": "how-to-get-cage-code",
+  "pageType": "howto",
+  "status": "published",
+  "title": "How to Get a CAGE Code in 5 Simple Steps",
+  "subtitle": "Step-by-step guide to getting your CAGE Code for federal contracting",
+  "metaTitle": "How to Get a CAGE Code: 5 Easy Steps (2025 Guide)",
+  "metaDescription": "Learn how to get a CAGE Code in 5 simple steps. Free step-by-step guide with screenshots, timeline, and common mistakes to avoid.",
+  "focusKeyword": "how to get cage code",
+  "primaryCtaText": "Start Your Application",
+  "primaryCtaUrl": "https://sam.gov",
+  "quickDefinition": "Getting a CAGE Code is free and takes about 3-10 business days. You'll get your CAGE Code automatically when you complete your SAM.gov entity registration.",
+  "keyPoints": [
+    "100% free - never pay for a CAGE Code",
+    "Process takes 3-10 business days",
+    "Requires SAM.gov registration",
+    "Need EIN and business documents"
+  ],
+  "sections": [
+    {
+      "heading": "Before You Start: What You'll Need",
+      "content": "Gather these items before starting your application:\n\n**Required Documents:**\n- EIN (Employer Identification Number)\n- Business bank account information\n- Legal business name and address\n- Business contact information (name, email, phone)\n\n**Time Needed:**\n- Initial setup: 30-45 minutes\n- Processing time: 3-10 business days"
+    },
+    {
+      "heading": "Step 1: Create a Login.gov Account",
+      "content": "First, you need a Login.gov account to access SAM.gov.\n\n1. Go to **login.gov**\n2. Click \"Create an account\"\n3. Enter your email address\n4. Create a strong password\n5. Set up two-factor authentication\n6. Verify your email\n\n**Important:** Use your business email, not personal."
+    },
+    {
+      "heading": "Step 2: Access SAM.gov",
+      "content": "Now access SAM.gov with your Login.gov credentials.\n\n1. Go to **sam.gov**\n2. Click \"Sign In\" (top right)\n3. Select \"Accept\" on the Login.gov prompt\n4. You're now logged into SAM.gov"
+    },
+    {
+      "heading": "Step 3: Start Entity Registration",
+      "content": "Begin your entity registration to get your CAGE Code.\n\n1. Click \"Entity Registrations\" in the menu\n2. Click \"Register Entity\"\n3. Follow the prompts to enter your business information\n\n**Key Sections:**\n- Core Data (business name, address, EIN)\n- Assertions (business type, size)\n- Representations and Certifications\n- Points of Contact"
+    },
+    {
+      "heading": "Step 4: Submit and Track",
+      "content": "After completing all sections:\n\n1. Review all information for accuracy\n2. Click \"Submit\"\n3. Note your registration tracking number\n4. Check your email for confirmation\n\nYour CAGE Code will be assigned within 3-10 business days. You'll receive an email when it's ready."
+    }
+  ],
+  "showOpnGovIQCallout": true,
+  "showFHCCallout": true,
+  "createdAt": "2025-12-04T09:50:41.145Z",
+  "updatedAt": "2025-12-04T09:50:41.145Z"
+}

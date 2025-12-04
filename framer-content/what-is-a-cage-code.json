@@ -1,0 +1,34 @@
+{
+  "id": "what-is-cage-code",
+  "slug": "what-is-a-cage-code",
+  "pageType": "definition",
+  "status": "published",
+  "title": "What is a CAGE Code? Definition, Purpose & Requirements",
+  "subtitle": "Everything you need to know about CAGE Codes for federal contracting",
+  "metaTitle": "What is a CAGE Code? Complete Guide for Beginners 2025",
+  "metaDescription": "Learn what a CAGE Code is, why you need one for federal contracting, and how it differs from DUNS and UEI numbers. Simple explanation for beginners.",
+  "focusKeyword": "what is a cage code",
+  "primaryCtaText": "Get Your CAGE Code",
+  "primaryCtaUrl": "/resources/cage-code",
+  "quickDefinition": "A CAGE Code (Commercial and Government Entity Code) is a unique 5-character alphanumeric identifier assigned by the Defense Logistics Agency (DLA) to entities doing business with the federal government.",
+  "keyPoints": [
+    "5-character alphanumeric identifier",
+    "Assigned by Defense Logistics Agency (DLA)",
+    "Required for federal contract bidding",
+    "Different from DUNS number and UEI"
+  ],
+  "sections": [
+    {
+      "heading": "CAGE Code Definition Explained",
+      "content": "A CAGE Code stands for Commercial and Government Entity Code. It's a unique identifier that the federal government uses to track and identify businesses that want to work with government agencies.\n\n**Simple Explanation:**\nThink of your CAGE Code like a government-issued business ID number. Just as you need a driver's license to drive, you need a CAGE Code to do business with the federal government.\n\n**Format:**\nCAGE Codes are exactly 5 characters long and contain a mix of letters and numbers. For example: 1ABC2 or 5XYZ9."
+    },
+    {
+      "heading": "Why Do You Need a CAGE Code?",
+      "content": "You need a CAGE Code if you want to:\n\n- **Bid on federal contracts** - All contract proposals require a CAGE Code\n- **Register in SAM.gov** - CAGE Code is assigned during registration\n- **Become a subcontractor** - Prime contractors require your CAGE Code\n- **Receive government payments** - Payment systems use CAGE Codes\n\n**Bottom line:** No CAGE Code = No federal contracts."
+    }
+  ],
+  "showOpnGovIQCallout": true,
+  "showFHCCallout": true,
+  "createdAt": "2025-12-04T09:50:41.145Z",
+  "updatedAt": "2025-12-04T09:50:41.145Z"
+}

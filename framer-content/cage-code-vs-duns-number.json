@@ -1,0 +1,38 @@
+{
+  "id": "cage-code-vs-duns",
+  "slug": "cage-code-vs-duns-number",
+  "pageType": "definition",
+  "status": "published",
+  "title": "CAGE Code vs DUNS Number: Key Differences Explained",
+  "subtitle": "Understanding the difference between CAGE Codes, DUNS, and UEI",
+  "metaTitle": "CAGE Code vs DUNS Number: What's the Difference?",
+  "metaDescription": "Confused about CAGE Code vs DUNS number? Learn the key differences, when you need each, and how they relate to your UEI number.",
+  "focusKeyword": "cage code vs duns number",
+  "primaryCtaText": "Get Your CAGE Code",
+  "primaryCtaUrl": "/resources/cage-code",
+  "quickDefinition": "CAGE Codes are government-issued identifiers for federal contractors, while DUNS numbers were private identifiers from Dun & Bradstreet. DUNS has been replaced by UEI (Unique Entity Identifier) as of April 2022.",
+  "keyPoints": [
+    "CAGE Code = Government issued (free)",
+    "DUNS = Private (discontinued April 2022)",
+    "UEI = New replacement for DUNS (free)",
+    "You need both CAGE Code and UEI for federal contracting"
+  ],
+  "sections": [
+    {
+      "heading": "Quick Comparison Table",
+      "content": "| Feature | CAGE Code | DUNS | UEI |\n|---------|-----------|------|-----|\n| **Issued By** | DLA (Government) | Dun & Bradstreet | SAM.gov |\n| **Cost** | Free | Was Free | Free |\n| **Format** | 5 characters | 9 digits | 12 characters |\n| **Status** | Active | Discontinued | Active |\n| **Required For** | Federal contracts | N/A (replaced) | SAM.gov registration |"
+    },
+    {
+      "heading": "What Happened to DUNS Numbers?",
+      "content": "DUNS numbers were discontinued in April 2022 and replaced by UEI (Unique Entity Identifier).\n\n**What this means for you:**\n- You no longer need a DUNS number\n- Your UEI is assigned automatically in SAM.gov\n- Old DUNS numbers are no longer valid\n\n**If you had a DUNS:** Your business was automatically assigned a UEI during the transition."
+    },
+    {
+      "heading": "Do You Need Both CAGE Code and UEI?",
+      "content": "Yes! For federal contracting, you need:\n\n1. **UEI** - Assigned during SAM.gov registration\n2. **CAGE Code** - Assigned after SAM.gov registration completes\n\nBoth are free and obtained through the same SAM.gov registration process."
+    }
+  ],
+  "showOpnGovIQCallout": true,
+  "showFHCCallout": true,
+  "createdAt": "2025-12-04T09:50:41.145Z",
+  "updatedAt": "2025-12-04T09:50:41.145Z"
+}
