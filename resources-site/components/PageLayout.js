@@ -55,7 +55,10 @@ export function Section({ heading, children }) {
   )
 }
 
-export function LeadMagnet({ title, description }) {
+export function LeadMagnet({ title, description, leadMagnetName, downloadUrl }) {
+  // Get FormSpark form ID from environment variable
+  const formId = process.env.NEXT_PUBLIC_FORMSPARK_FORM_ID || 'YOUR_FORMSPARK_FORM_ID'
+  
   return (
     <div className="lead-magnet">
       <h3>
@@ -63,7 +66,11 @@ export function LeadMagnet({ title, description }) {
         {title}
       </h3>
       <p>{description}</p>
-      <LeadMagnetForm />
+      <LeadMagnetForm 
+        formId={formId}
+        downloadUrl={downloadUrl}
+        leadMagnetName={leadMagnetName || title}
+      />
     </div>
   )
 }
@@ -130,4 +137,3 @@ export function Footer() {
     </footer>
   )
 }
-
