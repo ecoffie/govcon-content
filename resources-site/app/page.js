@@ -111,7 +111,7 @@ export default function HomePage() {
               }}>
                 {resource.title}
               </h3>
-              <p style={{ color: 'var(--gray)', margin: 0 }}>
+              <p style={{ color: 'var(--gray-600)', margin: 0 }}>
                 {resource.description}
               </p>
             </Link>

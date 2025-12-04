@@ -50,9 +50,7 @@ export const metadata = {
     },
   },
   verification: {
-    // Add these when you set them up:
-    // google: 'your-google-verification-code',
-    // yandex: 'your-yandex-verification-code',
+    google: 'yoXb5-tV3GixnHfrCFPDDY9xlA4oOTKLxawzfYSHUAI',
   },
   alternates: {
     canonical: 'https://guides.govcongiants.org',
