@@ -36,11 +36,47 @@ The site uses FormSpark to capture email leads from the lead magnet forms.
 
 ### Step 4: Set Up Email Automation
 
-In FormSpark:
-1. Go to your form settings
-2. Set up email notifications to receive leads
-3. (Optional) Connect to Zapier/Make for advanced automation
-4. (Optional) Auto-respond with download link to users
+**Auto-Responder Email (Includes Download Link):**
+
+The form automatically sends the `downloadUrl` field to FormSpark. To set up the auto-responder:
+
+1. Go to your FormSpark dashboard
+2. Click on your form → **Email** tab
+3. Enable **"Send auto-reply email to submitter"**
+4. Customize your email template and include the download link:
+
+```
+Subject: Download Your CAGE Code Requirements Checklist
+
+Hi there!
+
+Thanks for downloading the CAGE Code Requirements Checklist. 
+
+Click here to download your checklist:
+{{downloadUrl}}
+
+This comprehensive checklist includes:
+- All required business documents
+- Tax information needed
+- Banking requirements
+- Step-by-step application process
+
+Need help with your CAGE Code application? 
+Check out our free resources at guides.govcongiants.org
+
+Best regards,
+GovCon Giants Team
+
+---
+
+You're receiving this because you requested a download from GovCon Giants.
+```
+
+**Important:** Use `{{downloadUrl}}` in your template to include the download link. FormSpark will automatically replace it with the actual URL sent from the form.
+
+**Alternative Setup Options:**
+- Use FormSpark's integrations to send emails via your email service (Mailchimp, ConvertKit, etc.)
+- Connect to Zapier/Make for advanced automation workflows
 
 ## Adding Download Links
 

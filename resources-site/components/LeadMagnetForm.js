@@ -21,6 +21,13 @@ export function LeadMagnetForm({ formId, downloadUrl, leadMagnetName }) {
     try {
       // If FormSpark is configured, submit to FormSpark
       if (isFormSparkConfigured) {
+        // Convert relative download URL to absolute URL
+        const fullDownloadUrl = downloadUrl 
+          ? downloadUrl.startsWith('http') 
+            ? downloadUrl 
+            : `${window.location.origin}${downloadUrl}`
+          : null
+        
         const response = await fetch(`https://submit-form.com/${formId}`, {
           method: 'POST',
           headers: {
@@ -30,6 +37,7 @@ export function LeadMagnetForm({ formId, downloadUrl, leadMagnetName }) {
           body: JSON.stringify({
             email,
             leadMagnet: leadMagnetName || 'CAGE Code Resource',
+            downloadUrl: fullDownloadUrl,
             source: 'GovCon Resources Site',
             timestamp: new Date().toISOString(),
           }),
