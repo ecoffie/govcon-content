@@ -31,17 +31,17 @@ export default function GovernmentProcurementPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
+      <section className="bg-gradient-to-br from-govcon-primary to-neutral-dark-charcoal text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             {pageContent.hero.h1}
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-blue-100">
+          <p className="text-xl md:text-2xl mb-8 text-white/90">
             {pageContent.hero.subheadline}
           </p>
           <a
             href={pageContent.hero.cta.buttonLink}
-            className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors"
+            className="inline-block bg-accent-green text-neutral-dark-charcoal px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-green/90 transition-colors shadow-lg"
           >
             {pageContent.hero.cta.buttonText}
           </a>
@@ -49,24 +49,24 @@ export default function GovernmentProcurementPage() {
       </section>
 
       {/* Stats Bar */}
-      <section className="bg-gray-50 border-y border-gray-200">
+      <section className="bg-accent-light-blue border-y border-govcon-primary/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">$600B+</div>
-              <div className="text-gray-600">Annual Federal Contracts</div>
+              <div className="text-4xl font-bold text-govcon-primary mb-2">$600B+</div>
+              <div className="text-neutral-medium-charcoal">Annual Federal Contracts</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">23%</div>
-              <div className="text-gray-600">Set-Aside for Small Business</div>
+              <div className="text-4xl font-bold text-govcon-primary mb-2">23%</div>
+              <div className="text-neutral-medium-charcoal">Set-Aside for Small Business</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">10,000+</div>
-              <div className="text-gray-600">GovCon Giants Members</div>
+              <div className="text-4xl font-bold text-govcon-primary mb-2">10,000+</div>
+              <div className="text-neutral-medium-charcoal">GovCon Giants Members</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-blue-600 mb-2">135K</div>
-              <div className="text-gray-600">Monthly Searches</div>
+              <div className="text-4xl font-bold text-govcon-primary mb-2">135K</div>
+              <div className="text-neutral-medium-charcoal">Monthly Searches</div>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function GovernmentProcurementPage() {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="text-sm font-medium text-gray-700 hover:text-blue-600 whitespace-nowrap transition-colors"
+                className="text-sm font-medium text-neutral-medium-charcoal hover:text-govcon-primary whitespace-nowrap transition-colors"
               >
                 {item.title}
               </a>
@@ -109,7 +109,7 @@ export default function GovernmentProcurementPage() {
             />
 
             {section.subsections && section.subsections.map((subsection) => (
-              <div key={subsection.title} className="mt-8 pl-6 border-l-4 border-blue-500">
+              <div key={subsection.title} className="mt-8 pl-6 border-l-4 border-accent-green">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                   {subsection.title}
                 </h3>
@@ -122,16 +122,16 @@ export default function GovernmentProcurementPage() {
 
             {/* Insert CTA after 3rd section */}
             {index === 2 && (
-              <div className="mt-12 bg-blue-50 border-2 border-blue-200 rounded-lg p-8 text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="mt-12 bg-accent-light-blue border-2 border-govcon-primary/30 rounded-lg p-8 text-center">
+                <h3 className="text-2xl font-bold text-neutral-dark-charcoal mb-3">
                   {pageContent.ctas[0].title}
                 </h3>
-                <p className="text-gray-700 mb-6">
+                <p className="text-neutral-medium-charcoal mb-6">
                   {pageContent.ctas[0].description}
                 </p>
                 <a
                   href={pageContent.ctas[0].buttonLink}
-                  className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  className="inline-block bg-govcon-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-govcon-primary/90 transition-colors shadow-lg"
                 >
                   {pageContent.ctas[0].buttonText}
                 </a>
@@ -150,7 +150,7 @@ export default function GovernmentProcurementPage() {
               <details key={index} className="bg-gray-50 rounded-lg p-6 group">
                 <summary className="text-xl font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
                   {faq.question}
-                  <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
+                  <span className="text-govcon-primary group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <p className="mt-4 text-gray-700 leading-relaxed">
                   {faq.answer}
@@ -180,23 +180,23 @@ export default function GovernmentProcurementPage() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg p-12 text-center mb-16">
+        <section className="bg-gradient-to-r from-govcon-primary to-neutral-dark-charcoal text-white rounded-lg p-12 text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Win Government Contracts?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/90">
             Join 10,000+ small businesses in the GovCon Giants community
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={pageContent.ctas[0].buttonLink}
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="bg-accent-green text-neutral-dark-charcoal px-8 py-4 rounded-lg font-semibold hover:bg-accent-green/90 transition-colors shadow-lg"
             >
               {pageContent.ctas[0].buttonText}
             </a>
             <a
               href={pageContent.ctas[1].buttonLink}
-              className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors border-2 border-white"
+              className="bg-white text-govcon-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors border-2 border-white shadow-lg"
             >
               {pageContent.ctas[1].buttonText}
             </a>
@@ -213,7 +213,7 @@ export default function GovernmentProcurementPage() {
               <a
                 key={item.url}
                 href={item.url}
-                className="block bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-500 hover:shadow-lg transition-all"
+                className="block bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-govcon-primary hover:shadow-lg transition-all"
               >
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {item.title}
@@ -236,9 +236,9 @@ export default function GovernmentProcurementPage() {
               <a
                 key={state}
                 href={`/procurement/${state.toLowerCase()}`}
-                className="block bg-blue-50 border border-blue-200 rounded-lg p-4 text-center hover:bg-blue-100 transition-colors"
+                className="block bg-accent-light-blue border border-govcon-primary/30 rounded-lg p-4 text-center hover:bg-govcon-primary/10 transition-colors"
               >
-                <span className="font-semibold text-blue-600">{state}</span>
+                <span className="font-semibold text-govcon-primary">{state}</span>
               </a>
             ))}
           </div>
@@ -251,9 +251,9 @@ export default function GovernmentProcurementPage() {
               <a
                 key={industry}
                 href={`/procurement/${industry.toLowerCase().replace(/\s+/g, '-')}`}
-                className="block bg-green-50 border border-green-200 rounded-lg p-4 text-center hover:bg-green-100 transition-colors"
+                className="block bg-accent-green/10 border border-accent-green/30 rounded-lg p-4 text-center hover:bg-accent-green/20 transition-colors"
               >
-                <span className="font-semibold text-green-600">{industry}</span>
+                <span className="font-semibold text-accent-green">{industry}</span>
               </a>
             ))}
           </div>
