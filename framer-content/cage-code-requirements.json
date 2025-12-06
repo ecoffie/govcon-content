@@ -1,0 +1,39 @@
+{
+  "id": "cage-code-requirements",
+  "slug": "cage-code-requirements",
+  "pageType": "checklist",
+  "status": "published",
+  "title": "CAGE Code Requirements: Complete Checklist for 2025",
+  "subtitle": "Everything you need before applying for your CAGE Code",
+  "metaTitle": "CAGE Code Requirements: What You Need to Apply (2025)",
+  "metaDescription": "Complete checklist of CAGE Code requirements. Know exactly what documents and information you need before starting your application.",
+  "focusKeyword": "cage code requirements",
+  "primaryCtaText": "Download Checklist",
+  "primaryCtaUrl": "#lead-magnet",
+  "quickDefinition": "To get a CAGE Code, you need a legal business entity, EIN, physical address, and bank account. The application is free through SAM.gov.",
+  "keyPoints": [
+    "Legal business entity required",
+    "EIN or SSN for sole proprietors",
+    "Physical address (no P.O. boxes)",
+    "Bank account for payments"
+  ],
+  "sections": [
+    {
+      "heading": "Business Entity Requirements",
+      "content": "You must have a legal business entity to get a CAGE Code:\n\n**Accepted Entity Types:**\n- LLC (Limited Liability Company)\n- Corporation (C-Corp, S-Corp)\n- Partnership\n- Sole Proprietorship\n- Non-profit organization\n\n**Not Eligible:**\n- Individuals without a business\n- Informal businesses without registration"
+    },
+    {
+      "heading": "Documentation Checklist",
+      "content": "Have these documents ready:\n\n**Required:**\n☐ EIN confirmation letter from IRS (or SSN for sole proprietors)\n☐ Business registration/formation documents\n☐ Bank account information (routing and account numbers)\n☐ Proof of physical address\n\n**Recommended:**\n☐ Business website\n☐ Capability statement\n☐ NAICS codes for your industry"
+    }
+  ],
+  "leadMagnet": {
+    "title": "Download: CAGE Code Requirements Checklist PDF",
+    "description": "Print-friendly checklist of everything you need to apply for your CAGE Code.",
+    "pdfUrl": ""
+  },
+  "showOpnGovIQCallout": true,
+  "showFHCCallout": true,
+  "createdAt": "2025-12-04T09:50:41.145Z",
+  "updatedAt": "2025-12-04T09:50:41.145Z"
+}

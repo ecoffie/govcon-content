@@ -1,0 +1,51 @@
+{
+  "id": "cage-code-main",
+  "slug": "cage-code",
+  "pageType": "hub",
+  "status": "published",
+  "title": "CAGE Code Complete Guide: Everything Federal Contractors Need to Know",
+  "subtitle": "Your complete resource for understanding, obtaining, and using your CAGE Code",
+  "metaTitle": "CAGE Code Guide 2025: Complete Resource for Federal Contractors",
+  "metaDescription": "Learn everything about CAGE Codes: what they are, how to get one, requirements, and how to use it for federal contracting. Free checklist included.",
+  "focusKeyword": "cage code",
+  "primaryCtaText": "Download Free Guide",
+  "primaryCtaUrl": "#lead-magnet",
+  "quickDefinition": "A CAGE (Commercial and Government Entity) Code is a 5-character identifier assigned to suppliers doing business with the federal government. It's required for SAM.gov registration and bidding on federal contracts.",
+  "keyPoints": [
+    "Required for all federal contractors",
+    "Issued by DLA (Defense Logistics Agency)",
+    "Free to obtain through SAM.gov",
+    "Valid as long as SAM.gov registration is active"
+  ],
+  "sections": [
+    {
+      "heading": "What is a CAGE Code?",
+      "content": "A CAGE Code (Commercial and Government Entity Code) is a unique five-character alphanumeric identifier assigned by the Defense Logistics Agency (DLA) to entities that conduct business with the federal government.\n\nThink of it as your business's ID card for federal contracting. Without it, you cannot register in SAM.gov or bid on government contracts.\n\n**Key Facts:**\n- Issued by the Defense Logistics Agency (DLA)\n- Completely free to obtain\n- Required for SAM.gov registration\n- Used to identify contractors in federal systems\n\nThe CAGE Code system was originally developed for military procurement but is now used across all federal agencies to identify vendors and contractors."
+    },
+    {
+      "heading": "CAGE Code Requirements",
+      "content": "Before you can get a CAGE Code, you'll need to have the following ready:\n\n**Business Requirements:**\n- Legal business entity (LLC, Corporation, Sole Proprietorship)\n- Valid EIN (Employer Identification Number) or SSN for sole proprietors\n- Physical business address (P.O. boxes not accepted)\n- Active bank account\n\n**Documents You'll Need:**\n- Business registration documents\n- EIN confirmation letter from IRS\n- Bank account information\n- Business contact information\n\n**Timeline:**\n- Standard processing: 3-5 business days\n- During peak periods: Up to 10 business days"
+    },
+    {
+      "heading": "How to Get Your CAGE Code",
+      "content": "Getting your CAGE Code is a straightforward process through SAM.gov. Here's the step-by-step guide:\n\n**Step 1: Create a Login.gov Account**\nVisit login.gov and create an account using your business email.\n\n**Step 2: Go to SAM.gov**\nNavigate to sam.gov and click \"Sign In\" using your Login.gov credentials.\n\n**Step 3: Start Entity Registration**\nClick \"Get Started\" under Entity Registration and select your entity type.\n\n**Step 4: Complete Core Data**\nEnter your business information including:\n- Legal business name\n- Physical address\n- EIN/TIN\n- Business type and size\n\n**Step 5: Submit and Wait**\nAfter completing all sections, submit your registration. Your CAGE Code will be assigned automatically within 3-10 business days.\n\n**Pro Tip:** Double-check all information before submitting. Errors can delay your CAGE Code assignment significantly."
+    },
+    {
+      "heading": "Using Your CAGE Code",
+      "content": "Once you have your CAGE Code, you'll use it throughout your federal contracting journey:\n\n**In Proposals:**\nInclude your CAGE Code in all federal contract proposals and capability statements.\n\n**On Contract Documents:**\nYour CAGE Code appears on contracts, purchase orders, and invoices.\n\n**For Verification:**\nContracting officers use your CAGE Code to verify your registration and eligibility.\n\n**Subcontracting:**\nPrime contractors may require your CAGE Code before considering you as a subcontractor.\n\n**Important:** Keep your SAM.gov registration active to maintain your CAGE Code validity. You must renew annually."
+    },
+    {
+      "heading": "Common CAGE Code Questions",
+      "content": "**How much does a CAGE Code cost?**\nA CAGE Code is completely FREE. Never pay anyone to get you a CAGE Code.\n\n**Can I have multiple CAGE Codes?**\nYes, if your business has multiple physical locations, each location can have its own CAGE Code.\n\n**What's the difference between CAGE Code and DUNS?**\nCAGE Codes are government-issued identifiers, while DUNS numbers were private identifiers from Dun & Bradstreet. DUNS has been replaced by UEI (Unique Entity Identifier).\n\n**How long is a CAGE Code valid?**\nYour CAGE Code remains valid as long as your SAM.gov registration is active and renewed annually.\n\n**What if I made a mistake on my application?**\nLog into SAM.gov and update your entity registration. Changes typically process within 24-48 hours."
+    }
+  ],
+  "leadMagnet": {
+    "title": "Download: CAGE Code Application Checklist",
+    "description": "Get our step-by-step checklist to ensure you have everything you need for a smooth CAGE Code application. Save time and avoid mistakes.",
+    "pdfUrl": ""
+  },
+  "showOpnGovIQCallout": true,
+  "showFHCCallout": true,
+  "createdAt": "2025-12-04T09:50:41.139Z",
+  "updatedAt": "2025-12-04T09:50:41.145Z"
+}

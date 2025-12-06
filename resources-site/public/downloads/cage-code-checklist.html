@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAGE Code Requirements Checklist - GovCon Giants</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+      background: white;
+    }
+    
+    @media print {
+      body {
+        padding: 0.25in;
+      }
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #1A3A2E;
+      margin-bottom: 30px;
+    }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #1A3A2E;
+    }
+    
+    .logo span {
+      color: #FF9800;
+    }
+    
+    .header-right {
+      text-align: right;
+      font-size: 12px;
+      color: #666;
+    }
+    
+    h1 {
+      font-size: 28px;
+      color: #1A3A2E;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    
+    .intro-box {
+      background: #E8F5E9;
+      border-left: 4px solid #4CAF50;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .intro-box h3 {
+      color: #1A3A2E;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    
+    .intro-box p {
+      font-size: 14px;
+      color: #333;
+    }
+    
+    .section {
+      margin-bottom: 30px;
+    }
+    
+    .section-header {
+      background: #1A3A2E;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .section-header .icon {
+      font-size: 20px;
+    }
+    
+    .checklist {
+      background: #FAFAFA;
+      border: 1px solid #E0E0E0;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      padding: 20px;
+    }
+    
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #EEE;
+    }
+    
+    .checklist-item:last-child {
+      border-bottom: none;
+    }
+    
+    .checkbox {
+      width: 22px;
+      height: 22px;
+      border: 2px solid #1A3A2E;
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    
+    .item-content {
+      flex: 1;
+    }
+    
+    .item-title {
+      font-weight: 600;
+      color: #1A3A2E;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    
+    .item-description {
+      font-size: 13px;
+      color: #666;
+    }
+    
+    .tip-box {
+      background: #FFF8E1;
+      border: 1px solid #FFB74D;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin-top: 10px;
+    }
+    
+    .tip-box strong {
+      color: #F57C00;
+    }
+    
+    .tip-box p {
+      font-size: 13px;
+      margin-top: 5px;
+    }
+    
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    
+    .timeline-item {
+      background: #F5F5F5;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+    }
+    
+    .timeline-item .number {
+      font-size: 28px;
+      font-weight: 800;
+      color: #1A3A2E;
+    }
+    
+    .timeline-item .label {
+      font-size: 12px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 2px solid #E0E0E0;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      font-size: 20px;
+      font-weight: 800;
+      color: #1A3A2E;
+      margin-bottom: 10px;
+    }
+    
+    .footer p {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    
+    .footer a {
+      color: #1A3A2E;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .cta-box {
+      background: linear-gradient(135deg, #1A3A2E 0%, #2d5a47 100%);
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      margin: 30px 0;
+    }
+    
+    .cta-box h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .cta-box p {
+      font-size: 14px;
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+    
+    .cta-box a {
+      display: inline-block;
+      background: white;
+      color: #1A3A2E;
+      padding: 10px 25px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    .notes-section {
+      background: #FAFAFA;
+      border: 1px solid #E0E0E0;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    
+    .notes-section h4 {
+      color: #1A3A2E;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    
+    .notes-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .note-line {
+      border-bottom: 1px solid #CCC;
+      height: 25px;
+    }
+    
+    @media print {
+      .cta-box {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      
+      .section-header {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">GovCon <span>Giants</span></div>
+    <div class="header-right">
+      <strong>Free Resource</strong><br>
+      govcongiants.org
+    </div>
+  </div>
+  
+  <h1>✅ CAGE Code Requirements Checklist</h1>
+  <p class="subtitle">Everything you need to successfully apply for your CAGE Code through SAM.gov</p>
+  
+  <div class="intro-box">
+    <h3>💡 Before You Start</h3>
+    <p>A CAGE Code is <strong>FREE</strong> and obtained automatically when you register in SAM.gov. This checklist ensures you have everything ready for a smooth registration process. Gather all items below before starting your application.</p>
+  </div>
+  
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="number">30</div>
+      <div class="label">Minutes to Apply</div>
+    </div>
+    <div class="timeline-item">
+      <div class="number">3-10</div>
+      <div class="label">Days to Process</div>
+    </div>
+    <div class="timeline-item">
+      <div class="number">$0</div>
+      <div class="label">Cost (Always Free)</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <span class="icon">🏢</span>
+      <span>Business Information</span>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Legal Business Name</div>
+          <div class="item-description">Exactly as it appears on your tax documents and state registration</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">DBA Name (if applicable)</div>
+          <div class="item-description">"Doing Business As" name if different from legal name</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Business Start Date</div>
+          <div class="item-description">The date your business was officially formed/registered</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Business Type</div>
+          <div class="item-description">LLC, Corporation, Sole Proprietorship, Partnership, etc.</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">State of Incorporation</div>
+          <div class="item-description">The state where your business is legally registered</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <span class="icon">📋</span>
+      <span>Tax & Identification Documents</span>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">EIN (Employer Identification Number)</div>
+          <div class="item-description">9-digit number from IRS (get free at irs.gov/ein if needed)</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">EIN Confirmation Letter (CP 575)</div>
+          <div class="item-description">Letter from IRS confirming your EIN assignment</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Tax Year (Fiscal Year End)</div>
+          <div class="item-description">Most businesses use December 31</div>
+        </div>
+      </div>
+      <div class="tip-box">
+        <strong>💡 Sole Proprietors:</strong>
+        <p>You can use your SSN instead of an EIN, but getting an EIN is recommended for privacy and professionalism.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <span class="icon">📍</span>
+      <span>Address Information</span>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Physical Business Address</div>
+          <div class="item-description">Street address where business operates (NO P.O. boxes!)</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Mailing Address</div>
+          <div class="item-description">Can be same as physical or different (P.O. box OK here)</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Business Phone Number</div>
+          <div class="item-description">Main contact number for your business</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Business Email Address</div>
+          <div class="item-description">Professional email (ideally @yourdomain.com)</div>
+        </div>
+      </div>
+      <div class="tip-box">
+        <strong>⚠️ Important:</strong>
+        <p>Virtual office addresses and mailbox services (like UPS Store) may cause delays or rejection. Use your actual business location or home address.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <span class="icon">🏦</span>
+      <span>Banking Information</span>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Bank Name</div>
+          <div class="item-description">Name of your business bank</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Bank Routing Number</div>
+          <div class="item-description">9-digit ABA routing number (found on checks)</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Bank Account Number</div>
+          <div class="item-description">Your business checking account number</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Account Type</div>
+          <div class="item-description">Checking or Savings (checking recommended)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <span class="icon">👤</span>
+      <span>Points of Contact</span>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Government Business POC</div>
+          <div class="item-description">Name, title, phone, and email for government communications</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Electronic Business POC</div>
+          <div class="item-description">Person managing SAM.gov account (can be same person)</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Accounts Receivable POC</div>
+          <div class="item-description">Contact for payment-related communications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <span class="icon">🏷️</span>
+      <span>Business Classifications</span>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">NAICS Codes</div>
+          <div class="item-description">Industry codes for your business activities (look up at naics.com)</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">PSC Codes (optional)</div>
+          <div class="item-description">Product/Service codes for what you sell to government</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Number of Employees</div>
+          <div class="item-description">Total employees (including owners)</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Average Annual Revenue</div>
+          <div class="item-description">Your business's average annual gross receipts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <span class="icon">🔐</span>
+      <span>Online Accounts Needed</span>
+    </div>
+    <div class="checklist">
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">Login.gov Account</div>
+          <div class="item-description">Create at login.gov (required to access SAM.gov)</div>
+        </div>
+      </div>
+      <div class="checklist-item">
+        <div class="checkbox"></div>
+        <div class="item-content">
+          <div class="item-title">SAM.gov Account</div>
+          <div class="item-description">Create after Login.gov at sam.gov</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cta-box">
+    <h3>🚀 Need Help Getting Started?</h3>
+    <p>Join thousands of federal contractors in the GovCon Giants community. Get expert guidance, templates, and support.</p>
+    <a href="https://govcongiants.org/fhc">Join Federal Help Center →</a>
+  </div>
+  
+  <div class="notes-section">
+    <h4>📝 My Notes</h4>
+    <div class="notes-lines">
+      <div class="note-line"></div>
+      <div class="note-line"></div>
+      <div class="note-line"></div>
+      <div class="note-line"></div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="footer-logo">GovCon Giants</div>
+    <p><strong>#1 Community for Federal Contractors</strong></p>
+    <p>
+      <a href="https://govcongiants.org">govcongiants.org</a> · 
+      <a href="https://opngoviq.com">OpnGovIQ</a> · 
+      <a href="https://govcongiants.org/fhc">Federal Help Center</a>
+    </p>
+    <p style="margin-top: 15px; font-size: 11px; color: #999;">
+      © 2025 GovCon Giants. This checklist is for informational purposes only.<br>
+      Always verify requirements at SAM.gov for the most current information.
+    </p>
+  </div>
+</body>
+</html>
+
+

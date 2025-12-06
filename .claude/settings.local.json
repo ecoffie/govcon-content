@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "dataforseo"
+  ],
+  "enableAllProjectMcpServers": true
+}

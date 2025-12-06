@@ -1,0 +1,10 @@
+# GovCon Giants Guides - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://guides.govcongiants.org/sitemap.xml
+
+# Block admin/API routes (none currently, but future-proofing)
+Disallow: /api/
+

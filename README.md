@@ -1,10 +1,27 @@
-# GovCon Giants - Programmatic Procurement Pages
+# GovCon Giants - Content Repository
+
+Marketing content and programmatic page systems for [govcongiants.org](https://govcongiants.org) - The #1 Community for Federal Contractors.
+
+## 📁 Repository Structure
+
+```
+├── framer-content/              # JSON content for Framer CMS
+│   ├── cage-code-pages.json     # CAGE Code pages
+│   └── [page-slug].json         # Individual page content
+├── procurement-pages/           # Next.js Procurement Pages (this project)
+│   ├── app/                     # Next.js app directory
+│   ├── components/              # React components
+│   └── lib/                     # Utilities and data
+├── scripts/
+│   └── sync-to-framer.js        # Content sync script
+└── strategy-notes.md            # Marketing strategy
+```
+
+---
+
+## 🚀 Procurement Pages (Next.js App)
 
 A Next.js-based programmatic content generation system for SEO-optimized government procurement pages. Built to capture 135,000+ monthly searches for government procurement keywords.
-
-## Project Overview
-
-This project implements the **PRD for Programmatic Government Procurement Content Pages**, targeting high-volume procurement keywords with low competition.
 
 ### Key Features
 
@@ -12,146 +29,96 @@ This project implements the **PRD for Programmatic Government Procurement Conten
 - **SEO-Optimized**: Complete meta tags, schema markup, sitemap, robots.txt
 - **Performance-First**: Image optimization, lazy loading, Core Web Vitals optimization
 - **Conversion-Focused**: Strategic CTAs, lead magnets, community engagement
-- **Mobile-Responsive**: Fully responsive design with Tailwind CSS
+- **GovCon Giants Brand**: Official color palette and design system
 - **Type-Safe**: Built with TypeScript
 
-## Tech Stack
+### Tech Stack
 
 - **Framework**: Next.js 15+ (App Router)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS with GovCon Giants brand colors
 - **SEO**: Built-in sitemap, robots.txt, schema markup
 
-## Getting Started
-
-### Installation
+### Getting Started
 
 ```bash
+# Install dependencies
 npm install
-```
 
-### Run Development Server
-
-```bash
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-### Available Scripts
+### Page Routes
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-## Page Routes
-
-### Base Routes
-- `/` - Homepage
+- `/` - Homepage (redirects to /procurement)
 - `/procurement` - Main government procurement guide (3,000-5,000 words)
+- `/procurement/[state]` - Location-based variations (California, Texas, Florida, etc.)
+- `/procurement/[industry]` - Industry-based variations (Technology, Construction, etc.)
 
-### Programmatic Routes
+### Brand Colors
 
-**Location-Based:**
-- `/procurement/california`
-- `/procurement/texas`
-- `/procurement/florida`
+- **Primary Blue**: `#0066ff`
+- **Accent Green**: `#00fd9e`
+- **Light Blue Background**: `#e8f1ff`
+- **Dark Charcoal**: `#131517`
 
-**Industry-Based:**
-- `/procurement/technology`
-- `/procurement/construction`
-- `/procurement/consulting`
+### SEO Targets
 
-## Project Structure
+- **Primary keyword**: government procurement (135,000 searches/mo, LOW competition)
+- **Target traffic**: 1,000-6,750 monthly organic visitors by Month 3
+- **Conversion goal**: 5% conversion rate
 
-```
-app/
-├── layout.tsx              # Root layout with SEO metadata
-├── procurement/
-│   ├── page.tsx           # Main procurement page
-│   └── [slug]/page.tsx    # Dynamic programmatic pages
-├── sitemap.ts             # Dynamic sitemap
-└── robots.ts              # Robots.txt
+---
 
-lib/data/
-└── procurement-content.ts  # Content data structure
+## 📄 CAGE Code Pages (Framer CMS)
 
-types/
-└── content.ts             # TypeScript definitions
-```
+Content repository for CAGE Code programmatic pages.
 
-## Adding New Pages
+### Fetch Content in Framer
 
-### Location-Based
-
-Edit `app/procurement/[slug]/page.tsx`:
-
-```typescript
-'government-procurement-new-york': generateLocationVariation('New York', 'NY'),
+```javascript
+const response = await fetch(
+  'https://ecoffie.github.io/govcon-content/framer-content/cage-code-pages.json'
+);
+const content = await response.json();
 ```
 
-### Industry-Based
+### Pages Included
 
-```typescript
-'government-procurement-healthcare': generateIndustryVariation('Healthcare', ['621111']),
-```
+| Page | Target Keyword | Difficulty |
+|------|---------------|------------|
+| CAGE Code Main Hub | cage code | 8 |
+| CAGE Code Lookup | cage code lookup | 10-15 |
+| What is a CAGE Code | what is a cage code | 5-10 |
+| How to Get CAGE Code | how to get cage code | 10-15 |
 
-## SEO Features
+---
 
-- **Meta Tags**: Title, description, keywords, Open Graph, Twitter Cards
-- **Schema Markup**: Article, FAQPage, Organization
-- **Sitemap**: Auto-generated at `/sitemap.xml`
-- **Robots.txt**: Configured at `/robots.txt`
+## 🔗 Related
 
-## Analytics Setup
+- [GovCon Giants](https://govcongiants.org)
+- [OpnGovIQ](https://opngoviq.com)
+- [Federal Help Center](https://govcongiants.org/fhc)
 
-Replace `G-XXXXXXXXXX` in `app/layout.tsx` with your Google Analytics 4 ID.
+---
 
-## Deployment
+## 📊 Combined SEO Strategy
 
-### Deploy to Vercel (Recommended)
+This repository contains two major SEO initiatives:
+1. **Procurement Pages** (135K monthly searches)
+2. **CAGE Code Pages** (9.9K monthly searches)
 
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git push
-```
-
-Then import your repository at [vercel.com](https://vercel.com).
-
-### Update Domain
-
-After deployment, update `metadataBase` in `app/layout.tsx` with your production URL.
-
-## Success Metrics
-
-### Traffic Goals
-- Month 3: 1,000+ monthly organic visitors
-- Month 6: Top 10 rankings for primary keywords
-
-### Engagement Goals
-- Average session: 3+ minutes
-- Bounce rate: < 40%
-- Pages per session: 2+
-
-### Conversion Goals
-- Email signups: 5% conversion rate
-- Community joins: 2% conversion rate
-
-## Performance Targets
-
-- **LCP**: < 2.5s
-- **FID**: < 100ms
-- **CLS**: < 0.1
-- **Lighthouse Score**: 90+
-
-## License
-
-Proprietary - GovCon Giants © 2025
+Combined target: **10,000+ monthly organic visitors** by Month 6
 
 ---
 
 **Last Updated**: December 6, 2025
 **Version**: 1.0.0
+
+*Part of the GovCon Giants marketing strategy*

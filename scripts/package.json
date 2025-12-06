@@ -1,0 +1,13 @@
+{
+  "name": "govcon-framer-sync",
+  "version": "1.0.0",
+  "description": "Sync GovCon Giants content to Framer CMS",
+  "main": "sync-to-framer.js",
+  "scripts": {
+    "sync": "node sync-to-framer.js",
+    "build": "node sync-to-framer.js"
+  },
+  "author": "Eric Coffie",
+  "license": "MIT"
+}
+
