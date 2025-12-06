@@ -1,0 +1,23 @@
+{
+  "rewrites": [
+    {
+      "source": "/procurement/:path*",
+      "destination": "/procurement/:path*"
+    },
+    {
+      "source": "/((?!procurement).*)",
+      "destination": "https://govcongiants.framer.website/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/procurement/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
