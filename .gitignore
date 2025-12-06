@@ -45,3 +45,6 @@ next-env.d.ts
 # IDE
 .idea/
 .vscode/
+
+# Framer code (not part of Next.js build)
+framer-code/
