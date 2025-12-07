@@ -1018,7 +1018,7 @@ You must update your SAM.gov registration within 30 days when these changes occu
         <h4 class="font-bold text-lg text-red-900 mb-2">Selecting Wrong NAICS Codes</h4>
         <p class="text-red-800 mb-2">Choosing NAICS codes outside your actual capabilities or missing key codes limits your contract opportunities.</p>
         <div class="bg-green-100 p-3 rounded mt-2">
-          <p class="text-green-900"><strong>Solution:</strong> Research NAICS codes thoroughly at census.gov/naics. Select 5-10 codes that accurately represent your business capabilities.</p>
+          <p class="text-green-900"><strong>Solution:</strong> Research NAICS codes thoroughly at <a href="https://www.census.gov/naics" target="_blank" rel="noopener" class="text-blue-600 hover:underline">census.gov/naics</a>. Select 5-10 codes that accurately represent your business capabilities.</p>
         </div>
       </div>
     </div>
@@ -1335,7 +1335,7 @@ You must update your SAM.gov registration within 30 days when these changes occu
     },
     {
       question: 'How do I choose the right NAICS codes?',
-      answer: 'Research NAICS codes at census.gov/naics to find codes that match your business capabilities. Select 5-10 codes that accurately represent what your business can deliver. Your primary NAICS code should be your main business activity. These codes determine which contracts you are eligible for and your small business size standards.',
+      answer: 'Research NAICS codes at <a href="https://www.census.gov/naics" target="_blank" rel="noopener" class="text-blue-600 hover:underline">census.gov/naics</a> to find codes that match your business capabilities. Select 5-10 codes that accurately represent what your business can deliver. Your primary NAICS code should be your main business activity. These codes determine which contracts you are eligible for and your small business size standards.',
     },
     {
       question: 'Can I update my SAM.gov registration after submission?',

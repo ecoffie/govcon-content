@@ -404,7 +404,7 @@ Government contracting offers small businesses unique advantages:
         <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 space-y-2">
           <div class="flex items-start gap-3">
             <span class="text-green-300 font-bold">→</span>
-            <span>Research codes at census.gov/naics</span>
+            <span>Research codes at <a href="https://www.census.gov/naics" target="_blank" rel="noopener" class="text-white underline hover:text-green-200">census.gov/naics</a></span>
           </div>
           <div class="flex items-start gap-3">
             <span class="text-green-300 font-bold">→</span>
@@ -664,7 +664,7 @@ Government contracting offers small businesses unique advantages:
     },
     {
       question: 'How do I find my correct NAICS code?',
-      answer: 'Search the NAICS database at census.gov/naics for codes matching your products or services. Your NAICS code determines which contracts you\'re eligible for and your small business size standard. Most businesses select 5-10 codes that match their capabilities.',
+      answer: 'Search the NAICS database at <a href="https://www.census.gov/naics" target="_blank" rel="noopener" class="text-blue-600 hover:underline">census.gov/naics</a> for codes matching your products or services. Your NAICS code determines which contracts you\'re eligible for and your small business size standard. Most businesses select 5-10 codes that match their capabilities.',
     },
     {
       question: 'Can I subcontract work I win from the government?',
