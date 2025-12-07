@@ -92,11 +92,47 @@ Government contracting offers small businesses unique advantages:
 
 **Key Players in Government Procurement:**
 
-- **Contracting Officers (CO):** Authorize and manage contracts
-- **Contracting Officer's Representatives (COR):** Monitor contract performance
-- **Program Managers:** Define requirements and technical specifications
-- **Small Business Specialists:** Help small businesses navigate the process
-- **Prime Contractors:** Large companies that often subcontract to small businesses
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
+  <div class="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-300 rounded-xl p-6 hover:shadow-xl transition-all">
+    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+      <span class="text-3xl">👔</span>
+    </div>
+    <h4 class="font-bold text-xl text-blue-900 text-center mb-3">Contracting Officers (CO)</h4>
+    <p class="text-blue-800 text-center leading-relaxed">Authorize and manage contracts - your primary point of contact for contract awards</p>
+  </div>
+
+  <div class="bg-gradient-to-br from-purple-50 to-purple-100 border-2 border-purple-300 rounded-xl p-6 hover:shadow-xl transition-all">
+    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+      <span class="text-3xl">📊</span>
+    </div>
+    <h4 class="font-bold text-xl text-purple-900 text-center mb-3">Contracting Officer's Representatives (COR)</h4>
+    <p class="text-purple-800 text-center leading-relaxed">Monitor contract performance and ensure deliverables meet requirements</p>
+  </div>
+
+  <div class="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-300 rounded-xl p-6 hover:shadow-xl transition-all">
+    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+      <span class="text-3xl">🎯</span>
+    </div>
+    <h4 class="font-bold text-xl text-green-900 text-center mb-3">Program Managers</h4>
+    <p class="text-green-800 text-center leading-relaxed">Define requirements and technical specifications for projects</p>
+  </div>
+
+  <div class="bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-300 rounded-xl p-6 hover:shadow-xl transition-all">
+    <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+      <span class="text-3xl">🤝</span>
+    </div>
+    <h4 class="font-bold text-xl text-amber-900 text-center mb-3">Small Business Specialists</h4>
+    <p class="text-amber-800 text-center leading-relaxed">Help small businesses navigate the procurement process and find opportunities</p>
+  </div>
+
+  <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 border-2 border-indigo-300 rounded-xl p-6 hover:shadow-xl transition-all md:col-span-2 lg:col-span-1">
+    <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+      <span class="text-3xl">🏢</span>
+    </div>
+    <h4 class="font-bold text-xl text-indigo-900 text-center mb-3">Prime Contractors</h4>
+    <p class="text-indigo-800 text-center leading-relaxed">Large companies that often subcontract to small businesses for specialized work</p>
+  </div>
+</div>
 
 **Types of Contracts:**
 
@@ -108,10 +144,44 @@ Government contracting offers small businesses unique advantages:
         {
           title: 'Procurement Methods',
           content: `Different procurement methods are used based on dollar value and complexity:
-- **Micro-purchases:** Under $10,000 - minimal requirements
-- **Simplified acquisitions:** $10,000-$250,000 - streamlined process
-- **Full and open competition:** Over $250,000 - formal process
-- **Set-asides:** Limited to qualified small businesses`,
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="bg-green-50 border-l-4 border-green-500 rounded-lg p-5">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="text-2xl">💵</span>
+      <h5 class="font-bold text-lg text-green-900">Micro-purchases</h5>
+    </div>
+    <p class="text-green-800 font-semibold mb-1">Under $10,000</p>
+    <p class="text-green-700">Minimal requirements - fastest and easiest process</p>
+  </div>
+
+  <div class="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-5">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="text-2xl">📋</span>
+      <h5 class="font-bold text-lg text-blue-900">Simplified Acquisitions</h5>
+    </div>
+    <p class="text-blue-800 font-semibold mb-1">$10,000 - $250,000</p>
+    <p class="text-blue-700">Streamlined process with moderate requirements</p>
+  </div>
+
+  <div class="bg-purple-50 border-l-4 border-purple-500 rounded-lg p-5">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="text-2xl">🏆</span>
+      <h5 class="font-bold text-lg text-purple-900">Full and Open Competition</h5>
+    </div>
+    <p class="text-purple-800 font-semibold mb-1">Over $250,000</p>
+    <p class="text-purple-700">Formal process with comprehensive requirements</p>
+  </div>
+
+  <div class="bg-amber-50 border-l-4 border-amber-500 rounded-lg p-5">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="text-2xl">🎯</span>
+      <h5 class="font-bold text-lg text-amber-900">Set-Asides</h5>
+    </div>
+    <p class="text-amber-800 font-semibold mb-1">Any Dollar Amount</p>
+    <p class="text-amber-700">Limited to qualified small businesses - reduced competition</p>
+  </div>
+</div>`,
         },
       ],
     },
@@ -131,13 +201,82 @@ Government contracting offers small businesses unique advantages:
 
 **Challenges and How to Overcome Them:**
 
-| Challenge | Solution |
-|-----------|----------|
-| Complex regulations | Join GovCon Giants community for guidance |
-| Long sales cycles (6-18 months) | Maintain diverse revenue streams |
-| Detailed compliance requirements | Use compliance checklists and templates |
-| Proposal writing demands | Leverage proposal templates and examples |
-| Cash flow with slow payments | Consider government contract financing |
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white border-l-4 border-red-500 rounded-lg p-6 shadow-md">
+    <div class="flex items-start gap-4">
+      <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+        <span class="text-2xl">⚠️</span>
+      </div>
+      <div class="flex-1">
+        <h4 class="font-bold text-lg text-gray-900 mb-2">Complex Regulations</h4>
+        <p class="text-gray-600 mb-3">Navigating FAR and compliance requirements can be overwhelming</p>
+        <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+          <p class="text-green-800 font-medium">✓ Join GovCon Giants community for expert guidance</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border-l-4 border-red-500 rounded-lg p-6 shadow-md">
+    <div class="flex items-start gap-4">
+      <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+        <span class="text-2xl">⏱️</span>
+      </div>
+      <div class="flex-1">
+        <h4 class="font-bold text-lg text-gray-900 mb-2">Long Sales Cycles</h4>
+        <p class="text-gray-600 mb-3">Contract awards can take 6-18 months from start to finish</p>
+        <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+          <p class="text-green-800 font-medium">✓ Maintain diverse revenue streams while pursuing contracts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border-l-4 border-red-500 rounded-lg p-6 shadow-md">
+    <div class="flex items-start gap-4">
+      <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+        <span class="text-2xl">📋</span>
+      </div>
+      <div class="flex-1">
+        <h4 class="font-bold text-lg text-gray-900 mb-2">Detailed Compliance</h4>
+        <p class="text-gray-600 mb-3">Strict documentation and compliance requirements</p>
+        <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+          <p class="text-green-800 font-medium">✓ Use compliance checklists and templates</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border-l-4 border-red-500 rounded-lg p-6 shadow-md">
+    <div class="flex items-start gap-4">
+      <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+        <span class="text-2xl">✍️</span>
+      </div>
+      <div class="flex-1">
+        <h4 class="font-bold text-lg text-gray-900 mb-2">Proposal Writing</h4>
+        <p class="text-gray-600 mb-3">Creating competitive proposals requires skill and time</p>
+        <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+          <p class="text-green-800 font-medium">✓ Leverage proposal templates and expert examples</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border-l-4 border-red-500 rounded-lg p-6 shadow-md md:col-span-2">
+    <div class="flex items-start gap-4">
+      <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+        <span class="text-2xl">💰</span>
+      </div>
+      <div class="flex-1">
+        <h4 class="font-bold text-lg text-gray-900 mb-2">Cash Flow Management</h4>
+        <p class="text-gray-600 mb-3">Government payment cycles can be 30-60 days or longer</p>
+        <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+          <p class="text-green-800 font-medium">✓ Consider government contract financing and invoice factoring</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 **Small Business Set-Aside Programs:**
 
@@ -161,61 +300,188 @@ Government contracting offers small businesses unique advantages:
       title: 'How to Get Started with Government Procurement',
       content: `Follow this step-by-step guide to begin your government contracting journey:
 
-**Prerequisites and Requirements:**
+<div class="bg-blue-50 border-2 border-blue-300 rounded-xl p-6 my-8">
+  <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-3">
+    <span class="text-3xl">✅</span>
+    Prerequisites and Requirements
+  </h3>
+  <p class="text-blue-800 mb-4">Before you start, ensure you have:</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div class="bg-white rounded-lg p-3 border-l-4 border-green-500">
+      <span class="text-green-600 font-medium">✓ Established business entity (LLC, Corporation, etc.)</span>
+    </div>
+    <div class="bg-white rounded-lg p-3 border-l-4 border-green-500">
+      <span class="text-green-600 font-medium">✓ Federal Tax ID (EIN)</span>
+    </div>
+    <div class="bg-white rounded-lg p-3 border-l-4 border-green-500">
+      <span class="text-green-600 font-medium">✓ DUNS Number (now UEI number)</span>
+    </div>
+    <div class="bg-white rounded-lg p-3 border-l-4 border-green-500">
+      <span class="text-green-600 font-medium">✓ Business bank account</span>
+    </div>
+    <div class="bg-white rounded-lg p-3 border-l-4 border-green-500">
+      <span class="text-green-600 font-medium">✓ Defined NAICS codes for your services/products</span>
+    </div>
+    <div class="bg-white rounded-lg p-3 border-l-4 border-green-500">
+      <span class="text-green-600 font-medium">✓ Past performance references (if available)</span>
+    </div>
+  </div>
+</div>
 
-Before you start, ensure you have:
-- ✅ Established business entity (LLC, Corporation, etc.)
-- ✅ Federal Tax ID (EIN)
-- ✅ DUNS Number (now UEI number)
-- ✅ Business bank account
-- ✅ Defined NAICS codes for your services/products
-- ✅ Past performance references (if available)
+<div class="space-y-6 my-8">
+  <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl p-8 shadow-lg">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center text-blue-600 font-bold text-2xl shadow-lg">
+        1
+      </div>
+      <div class="flex-1">
+        <h3 class="text-2xl font-bold mb-3">Register on SAM.gov</h3>
+        <p class="text-blue-100 mb-4">SAM.gov (System for Award Management) is mandatory for federal contracts:</p>
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 space-y-2">
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Visit SAM.gov and create an account</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Gather required documentation (EIN, banking info, business details)</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Complete the registration (takes 1-2 hours)</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Wait for validation (7-10 business days)</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Maintain annual renewal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-**Step 1: Register on SAM.gov**
+  <div class="bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-xl p-8 shadow-lg">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center text-purple-600 font-bold text-2xl shadow-lg">
+        2
+      </div>
+      <div class="flex-1">
+        <h3 class="text-2xl font-bold mb-3">Identify Your NAICS Codes</h3>
+        <p class="text-purple-100 mb-4">NAICS codes determine which contracts you're eligible for:</p>
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 space-y-2">
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Research codes at census.gov/naics</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Select 5-10 codes that match your capabilities</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Prioritize codes with small business size standards you meet</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Update your SAM.gov profile with these codes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-SAM.gov (System for Award Management) is mandatory for federal contracts:
+  <div class="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-xl p-8 shadow-lg">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center text-green-600 font-bold text-2xl shadow-lg">
+        3
+      </div>
+      <div class="flex-1">
+        <h3 class="text-2xl font-bold mb-3">Understand and Pursue Certifications</h3>
+        <p class="text-green-100 mb-4">Determine which certifications benefit your business:</p>
+        <div class="space-y-3">
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-green-200">Small Business:</span> Automatic if you meet size standards
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-green-200">8(a):</span> Apply at sba.gov (requires social/economic disadvantage)
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-green-200">HUBZone:</span> Must have office in qualified zone
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-green-200">WOSB/EDWOSB:</span> Woman-owned with 51%+ ownership
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-green-200">SDVOSB:</span> Veteran-owned with service-connected disability
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-1. Visit SAM.gov and create an account
-2. Gather required documentation (EIN, banking info, business details)
-3. Complete the registration (takes 1-2 hours)
-4. Wait for validation (7-10 business days)
-5. Maintain annual renewal
+  <div class="bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-xl p-8 shadow-lg">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center text-orange-600 font-bold text-2xl shadow-lg">
+        4
+      </div>
+      <div class="flex-1">
+        <h3 class="text-2xl font-bold mb-3">Find Opportunities</h3>
+        <p class="text-orange-100 mb-4">Where to search for contracts:</p>
+        <div class="space-y-3">
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-orange-200">SAM.gov Contract Opportunities:</span> Primary federal source
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-orange-200">GSA eBuy:</span> For GSA schedule holders
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-orange-200">Agency-specific sites:</span> Many agencies have their own portals
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+            <span class="font-bold text-orange-200">GovCon Giants Opportunity Finder:</span> Curated opportunities for members
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-**Step 2: Identify Your NAICS Codes**
-
-NAICS codes determine which contracts you're eligible for:
-
-- Research codes at census.gov/naics
-- Select 5-10 codes that match your capabilities
-- Prioritize codes with small business size standards you meet
-- Update your SAM.gov profile with these codes
-
-**Step 3: Understand and Pursue Certifications**
-
-Determine which certifications benefit your business:
-
-- **Small Business:** Automatic if you meet size standards
-- **8(a):** Apply at sba.gov (requires social/economic disadvantage)
-- **HUBZone:** Must have office in qualified zone
-- **WOSB/EDWOSB:** Woman-owned with 51%+ ownership
-- **SDVOSB:** Veteran-owned with service-connected disability
-
-**Step 4: Find Opportunities**
-
-Where to search for contracts:
-- **SAM.gov Contract Opportunities:** Primary federal source
-- **GSA eBuy:** For GSA schedule holders
-- **Agency-specific sites:** Many agencies have their own portals
-- **GovCon Giants Opportunity Finder:** Curated opportunities for members
-
-**Step 5: Submit Your First Bid**
-
-Tips for your first proposal:
-- Start with smaller contracts ($25K-$100K)
-- Focus on solicitations matching your exact capabilities
-- Follow ALL instructions precisely
-- Use past performance from commercial work if no government experience
-- Join GovCon Giants for proposal templates and reviews`,
+  <div class="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl p-8 shadow-lg">
+    <div class="flex items-start gap-6">
+      <div class="flex-shrink-0 w-16 h-16 bg-white rounded-full flex items-center justify-center text-red-600 font-bold text-2xl shadow-lg">
+        5
+      </div>
+      <div class="flex-1">
+        <h3 class="text-2xl font-bold mb-3">Submit Your First Bid</h3>
+        <p class="text-red-100 mb-4">Tips for your first proposal:</p>
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 space-y-2">
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Start with smaller contracts ($25K-$100K)</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Focus on solicitations matching your exact capabilities</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Follow ALL instructions precisely</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Use past performance from commercial work if no government experience</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-green-300 font-bold">→</span>
+            <span>Join GovCon Giants for proposal templates and reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`,
     },
     {
       id: 'opportunities',

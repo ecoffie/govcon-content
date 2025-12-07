@@ -173,8 +173,8 @@ li {
 }
 
 .nav-links a {
-  color: var(--gray-700);
-  font-weight: 500;
+  color: var(--gray-900);
+  font-weight: 600;
   font-size: 1rem;
   transition: color 0.2s ease;
   text-decoration: none;

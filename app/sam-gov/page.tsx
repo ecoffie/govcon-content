@@ -1,24 +1,24 @@
 import { Metadata } from 'next';
-import { baseProcurementContent } from '@/lib/data/procurement-content';
+import { baseSamGovContent } from '@/lib/data/samgov-content';
 
 export const metadata: Metadata = {
-  title: baseProcurementContent.metadata.title,
-  description: baseProcurementContent.metadata.description,
-  keywords: baseProcurementContent.metadata.keywords,
+  title: baseSamGovContent.metadata.title,
+  description: baseSamGovContent.metadata.description,
+  keywords: baseSamGovContent.metadata.keywords,
   openGraph: {
-    title: baseProcurementContent.metadata.title,
-    description: baseProcurementContent.metadata.description,
+    title: baseSamGovContent.metadata.title,
+    description: baseSamGovContent.metadata.description,
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: baseProcurementContent.metadata.title,
-    description: baseProcurementContent.metadata.description,
+    title: baseSamGovContent.metadata.title,
+    description: baseSamGovContent.metadata.description,
   },
 };
 
-export default function GovernmentProcurementPage() {
-  const pageContent = baseProcurementContent;
+export default function SamGovPage() {
+  const pageContent = baseSamGovContent;
 
   return (
     <main className="min-h-screen bg-white">
@@ -53,20 +53,20 @@ export default function GovernmentProcurementPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-govcon-primary mb-2">$600B+</div>
-              <div className="text-neutral-medium-charcoal">Annual Federal Contracts</div>
+              <div className="text-4xl font-bold text-govcon-primary mb-2">49,500</div>
+              <div className="text-neutral-medium-charcoal">Monthly SAM.gov Searches</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-govcon-primary mb-2">23%</div>
-              <div className="text-neutral-medium-charcoal">Set-Aside for Small Business</div>
+              <div className="text-4xl font-bold text-govcon-primary mb-2">FREE</div>
+              <div className="text-neutral-medium-charcoal">Registration Cost</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-govcon-primary mb-2">10,000+</div>
-              <div className="text-neutral-medium-charcoal">GovCon Giants Members</div>
+              <div className="text-4xl font-bold text-govcon-primary mb-2">7-10 Days</div>
+              <div className="text-neutral-medium-charcoal">Validation Timeline</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-govcon-primary mb-2">135K</div>
-              <div className="text-neutral-medium-charcoal">Monthly Searches</div>
+              <div className="text-4xl font-bold text-govcon-primary mb-2">Annual</div>
+              <div className="text-neutral-medium-charcoal">Renewal Required</div>
             </div>
           </div>
         </div>
@@ -107,18 +107,6 @@ export default function GovernmentProcurementPage() {
                   .replace(/(<li>.*<\/li>)/s, '<ul class="list-disc pl-6 space-y-2">$1</ul>')
               }}
             />
-
-            {section.subsections && section.subsections.map((subsection) => (
-              <div key={subsection.title} className="mt-8 pl-6 border-l-4 border-accent-green">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                  {subsection.title}
-                </h3>
-                <div
-                  className="prose prose-lg max-w-none text-gray-700 whitespace-pre-line"
-                  dangerouslySetInnerHTML={{ __html: subsection.content.replace(/^- (.*$)/gim, '<li>$1</li>').replace(/(<li>.*<\/li>)/s, '<ul class="list-disc pl-6 space-y-2">$1</ul>') }}
-                />
-              </div>
-            ))}
 
             {/* Insert CTA after 3rd section */}
             {index === 2 && (
@@ -182,10 +170,10 @@ export default function GovernmentProcurementPage() {
         {/* Final CTA Section */}
         <section className="bg-gradient-to-r from-govcon-primary to-neutral-dark-charcoal text-white rounded-lg p-12 text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Win Government Contracts?
+            Ready to Register on SAM.gov?
           </h2>
           <p className="text-xl mb-8 text-white/90">
-            Join 10,000+ small businesses in the GovCon Giants community
+            Join 10,000+ small businesses in the GovCon Giants community for free support
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -229,13 +217,13 @@ export default function GovernmentProcurementPage() {
         {/* Programmatic Variations Links */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Government Procurement by Location
+            SAM.gov Registration by Location
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {['California', 'Texas', 'Florida', 'New York', 'Pennsylvania', 'Illinois'].map((state) => (
               <a
                 key={state}
-                href={`/procurement/${state.toLowerCase()}`}
+                href={`/sam-gov/${state.toLowerCase()}`}
                 className="block bg-accent-light-blue border border-govcon-primary/30 rounded-lg p-4 text-center hover:bg-govcon-primary/10 transition-colors"
               >
                 <span className="font-semibold text-govcon-primary">{state}</span>
@@ -244,13 +232,13 @@ export default function GovernmentProcurementPage() {
           </div>
 
           <h2 className="text-3xl font-bold text-gray-900 mb-8 mt-16">
-            Government Procurement by Industry
+            SAM.gov Registration by Industry
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {['Technology', 'Construction', 'Consulting', 'Manufacturing', 'Healthcare', 'Professional Services'].map((industry) => (
               <a
                 key={industry}
-                href={`/procurement/${industry.toLowerCase().replace(/\s+/g, '-')}`}
+                href={`/sam-gov/${industry.toLowerCase().replace(/\s+/g, '-')}`}
                 className="block bg-accent-green/10 border border-accent-green/30 rounded-lg p-4 text-center hover:bg-accent-green/20 transition-colors"
               >
                 <span className="font-semibold text-accent-green">{industry}</span>
