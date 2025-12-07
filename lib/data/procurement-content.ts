@@ -288,10 +288,40 @@ Government contracting offers small businesses unique advantages:
       subsections: [
         {
           title: 'Success Stories from GovCon Giants Community',
-          content: `Real examples from our community members:
-- **Tech Startup (Year 1):** Won $85K contract after joining GovCon Giants, learned SAM.gov registration
-- **Consulting Firm (Year 2):** Scaled from $0 to $2M in government revenue using our opportunity finder
-- **Manufacturing Company:** Secured first $500K contract within 6 months of certification`,
+          content: `<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+  <div class="bg-white border-2 border-gray-200 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+    <div class="absolute top-4 left-4 text-6xl text-gray-200 font-serif leading-none">"</div>
+    <div class="relative z-10 pt-8">
+      <p class="text-gray-700 italic mb-6 text-lg">Won $85K contract after joining GovCon Giants, learned SAM.gov registration through the community</p>
+      <div class="border-t border-gray-200 pt-4">
+        <p class="font-bold text-gray-900">Tech Startup</p>
+        <p class="text-sm text-gray-600">Year 1 in Federal Contracting</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border-2 border-gray-200 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+    <div class="absolute top-4 left-4 text-6xl text-gray-200 font-serif leading-none">"</div>
+    <div class="relative z-10 pt-8">
+      <p class="text-gray-700 italic mb-6 text-lg">Scaled from $0 to $2M in government revenue using the opportunity finder and expert guidance</p>
+      <div class="border-t border-gray-200 pt-4">
+        <p class="font-bold text-gray-900">Consulting Firm</p>
+        <p class="text-sm text-gray-600">Year 2 in Federal Contracting</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border-2 border-gray-200 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow relative">
+    <div class="absolute top-4 left-4 text-6xl text-gray-200 font-serif leading-none">"</div>
+    <div class="relative z-10 pt-8">
+      <p class="text-gray-700 italic mb-6 text-lg">Secured first $500K contract within 6 months of certification with support from the community</p>
+      <div class="border-t border-gray-200 pt-4">
+        <p class="font-bold text-gray-900">Manufacturing Company</p>
+        <p class="text-sm text-gray-600">6 Months After Certification</p>
+      </div>
+    </div>
+  </div>
+</div>`,
         },
       ],
     },
