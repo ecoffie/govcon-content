@@ -539,9 +539,24 @@ Government contracting offers small businesses unique advantages:
 - Each major agency has procurement pages
 
 **4. Subcontracting Opportunities & Finding Prime Contractors**
+
+<div class="my-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-500 rounded-xl p-6">
+  <div class="flex items-center gap-4 mb-4">
+    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl flex-shrink-0">
+      🔍
+    </div>
+    <div class="flex-1">
+      <h4 class="text-xl font-bold text-gray-900 mb-1">Free Prime Contractors Database</h4>
+      <p class="text-gray-700">Search 2,768 federal contractors with SBLO contacts & $479.9B in contracts</p>
+    </div>
+  </div>
+  <a href="/database" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all hover:shadow-lg">
+    Access Database →
+  </a>
+</div>
+
 - Large prime contractors seek small business partners
 - Often easier entry point than prime contracts
-- **NEW: <a href="/database" class="text-blue-600 hover:text-blue-800 font-bold underline">Search 2,768 Prime Contractors Database →</a>** - Free searchable database with SBLO contacts
 - Check prime contractors' websites for opportunities
 - Attend industry days and matchmaking events
 
