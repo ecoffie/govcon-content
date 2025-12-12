@@ -538,9 +538,10 @@ Government contracting offers small businesses unique advantages:
 - Department of Veterans Affairs: va.gov/osdbu
 - Each major agency has procurement pages
 
-**4. Subcontracting Opportunities**
+**4. Subcontracting Opportunities & Finding Prime Contractors**
 - Large prime contractors seek small business partners
 - Often easier entry point than prime contracts
+- **NEW: <a href="/database" class="text-blue-600 hover:text-blue-800 font-bold underline">Search 2,768 Prime Contractors Database →</a>** - Free searchable database with SBLO contacts
 - Check prime contractors' websites for opportunities
 - Attend industry days and matchmaking events
 
